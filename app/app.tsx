@@ -39,7 +39,7 @@ export const App: React.FunctionComponent<{}> = () => {
     }
   });
 
-  const prefix = 'wirtual://'
+  const prefix = 'chatbee://'
 
   return  <ActionSheetProvider>
   <GlobalContext.Provider value={[globalContext, setGlobalContext]}>

@@ -135,7 +135,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.wjames.wirtual"
+        applicationId "com.wjames.chatbee"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 6

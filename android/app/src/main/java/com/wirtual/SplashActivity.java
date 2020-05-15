@@ -1,4 +1,4 @@
-package com.wjames.wirtual;
+package com.wjames.chatbee;
 
 import android.content.Intent;
 import android.os.Bundle;

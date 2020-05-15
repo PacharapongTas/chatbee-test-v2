@@ -1,4 +1,4 @@
-package com.wjames.wirtual;
+package com.wjames.chatbee;
 
 import com.facebook.react.ReactActivity;
 

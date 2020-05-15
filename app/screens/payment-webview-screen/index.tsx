@@ -51,7 +51,7 @@ export const PaymentWebViewScreen: React.FunctionComponent<WebViewScreenProps> =
 
   return (
     <View testID="FeedScreen" style={CONTAINER}>
-      <Header headerText="WIRTUAL" leftIcon="back" onLeftPress={onBackPress} />
+      <Header headerText="CHATBEE" leftIcon="back" onLeftPress={onBackPress} />
       {state.loading ? (
         renderActivityIndicator()
       ) : (

@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.wjames.wirtual",
+    package = "com.wjames.chatbee",
 )
 
 android_resource(
     name = "res",
-    package = "com.wjames.wirtual",
+    package = "com.wjames.chatbee",
     res = "src/main/res",
 )
 

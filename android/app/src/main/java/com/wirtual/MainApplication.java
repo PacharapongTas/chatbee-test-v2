@@ -1,4 +1,4 @@
-package com.wjames.wirtual;
+package com.wjames.chatbee;
 
 import androidx.multidex.MultiDexApplication;
 import android.content.Context;

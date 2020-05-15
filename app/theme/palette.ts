@@ -8,7 +8,7 @@ export const palette = {
   lighterGrey: "#CDD4DA",
   angry: "#dd3333",
 
-  // wirtual
+  // chatbee
   purple: "#560096", // btn
   jagger: "#201151",
   lipstick: "#BC0066",
