@@ -70,7 +70,7 @@ export const EventsScreen: FunctionComponent<EventsScreenProps> = ({ navigation 
         <View style={EVENT_CONTAINER}>
           <Text style={EVENT_TITLE}>เลือกชาเลนจ์ของคุณ</Text>
           <Text style={EVENT_DESCRIPTION}>
-            Wirtual.co เราคือแพลตฟอร์ม Virtual run รูปแบบใหม่
+            ChatBee.co เราคือแพลตฟอร์ม Virtual run รูปแบบใหม่
             ที่จะทําให้การวิ่งท้าทายและสนุกมากยิ่งขึ้น
             ร่วมพิชิตชาเลนจ์ด้วยเส้นทางเสมือนจริงก่อนใครที่นี่
           </Text>

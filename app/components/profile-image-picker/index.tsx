@@ -21,7 +21,7 @@ export const ProfileImagePicker = ({ source, onSelect, onUpload }: any) => {
     chooseFromLibraryButtonTitle: "เลือกจากแกลลอรี่",
     storageOptions: {
       skipBackup: true,
-      path: "Wirtual",
+      path: "ChatBee",
     },
   }
 

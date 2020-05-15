@@ -118,7 +118,7 @@ export const FeedScreen = ({ navigation }) => {
   const onClickJoinChallenge = () => {
     setWelcomePopupStep(0)
 
-    // challengeId is Bangkok Wirtual Run (mini)
+    // challengeId is Bangkok ChatBee Run (mini)
     navigation.navigate("ChallengeDetail", { challengeId: 1 })
   }
 

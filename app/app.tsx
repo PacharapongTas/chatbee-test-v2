@@ -48,6 +48,6 @@ export const App: React.FunctionComponent<{}> = () => {
       </ActionSheetProvider>
 }
 
-const APP_NAME = "Wirtual"
+const APP_NAME = "ChatBee"
 
 AppRegistry.registerComponent(APP_NAME, () => App)

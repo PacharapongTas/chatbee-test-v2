@@ -58,8 +58,8 @@ export function RewardPopup({visible, onCancel, onSubmit}: IProps) {
     <View style={TITLE_CONTAINER}>
       <Text style={TITLE}>คุณได้รับชาเลนจ์ฟรี!</Text>
     </View>
-    <Text style={DESCRIPTION}>ยินดีต้อนรับเข้าสู่โลก Wirtual</Text>
-    <Text style={DESCRIPTION2}>"Bangkok Wirtual Run"</Text>
+    <Text style={DESCRIPTION}>ยินดีต้อนรับเข้าสู่โลก ChatBee</Text>
+    <Text style={DESCRIPTION2}>"Bangkok ChatBee Run"</Text>
     <View style={SUBMIT_BUTTON}>
     <PrimaryButton style={{height: 50}} onPress={onSubmit}><Text style={{color: 'white',fontSize: 15, fontWeight: '500'}}>เข้าร่วมชาเลนจ์</Text></PrimaryButton>
     </View>

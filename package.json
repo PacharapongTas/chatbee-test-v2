@@ -162,14 +162,14 @@
     "test-runner": "jest",
     "configurations": {
       "ios.sim.debug": {
-        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/Wirtual.app",
-        "build": "xcodebuild -workspace ios/Wirtual.xcworkspace -scheme Wirtual -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=NO",
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/ChatBee.app",
+        "build": "xcodebuild -workspace ios/ChatBee.xcworkspace -scheme ChatBee -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=NO",
         "type": "ios.simulator",
         "name": "iPhone 8"
       },
       "ios.sim.release": {
-        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/Wirtual.app",
-        "build": "xcodebuild -workspace ios/Wirtual.xcworkspace -scheme Wirtual -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=NO",
+        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/ChatBee.app",
+        "build": "xcodebuild -workspace ios/ChatBee.xcworkspace -scheme ChatBee -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -UseModernBuildSystem=NO",
         "type": "ios.simulator",
         "name": "iPhone 8"
       }

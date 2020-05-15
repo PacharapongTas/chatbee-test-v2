@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Wirtual</string>
+    <string name="app_name">ChatBee</string>
     <string name="facebook_app_id">1734729416803967</string>
     <string name="fb_login_protocol_scheme">fb1734729416803967</string>
     <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>

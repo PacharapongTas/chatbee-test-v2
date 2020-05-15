@@ -1,4 +1,4 @@
-rootProject.name = 'Wirtual'
+rootProject.name = 'ChatBee'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':appcenter-crashes'
 project(':appcenter-crashes').projectDir = new File(rootProject.projectDir, '../node_modules/appcenter-crashes/android')
