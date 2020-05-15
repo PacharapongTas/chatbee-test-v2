@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'Wirtual' do
-  # Pods for Wirtual
+target 'ChatBee' do
+  # Pods for ChatBee
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -45,10 +45,10 @@ target 'Wirtual' do
   use_native_modules!
 end
 
-target 'Wirtual-tvOS' do
-  # Pods for Wirtual-tvOS
+target 'ChatBee-tvOS' do
+  # Pods for ChatBee-tvOS
 
-  target 'Wirtual-tvOSTests' do
+  target 'ChatBee-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
