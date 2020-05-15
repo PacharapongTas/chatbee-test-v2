@@ -22,8 +22,8 @@ export const WebViewScreen: React.FunctionComponent<WebViewScreenProps> = ({ nav
     <View testID="FeedScreen" style={CONTAINER}>
       <Header headerText={title} leftIcon="back" onLeftPress={onBackPress} />
       <WebView 
-      source={{ uri: navigation.getParam("uri") }}
-      onNavigationStateChange={onNavigationStateChange}
+        source={{ uri: navigation.getParam("uri") }}
+        onNavigationStateChange={onNavigationStateChange}
       />
     </View>
   )

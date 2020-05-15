@@ -9,7 +9,7 @@ import { Screen, Header, SizeChartModal, Text, ErrorText } from "../../component
 import { PrimaryButton } from "../../components/button/primary-button"
 import { spacing, color } from "../../theme"
 import { Picker, TextInput } from "../../components"
-import { CONFIRM_BUTTON } from "../send-data-screen/styles"
+import { CONFIRM_BUTTON } from "./styles"
 import { SIZE } from "../../utils/constants"
 // import { getCities, getDistricts, getSubDistricts, getMe } from "../../services/api"
 

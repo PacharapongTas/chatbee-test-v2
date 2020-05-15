@@ -33,7 +33,7 @@ export const AuthLoadingScreen = ({ navigation }) => {
 
   return (
     <View style={CONTAINER}>
-      <Screen backgroundColor={color.darkBackground2} />
+      <Screen backgroundColor={color.palette.surface_main} />
     </View>
   )
 }

@@ -3,17 +3,7 @@ import { createStackNavigator } from "react-navigation-stack"
 import {
   MainScreen,
   SecondScreen,
-  // ChallengeDetailScreen,
-  // FullChallengeDetailScreen,
-  // SocialShareScreen,
-  // PaymentScreen,
   InputFormScreen,
-  // PaymentSummaryScreen,
-  // PaymentMethodScreen,
-  // PaymentWebViewScreen,
-  // PaymentCompleteScreen,
-  // SendResultScreen,
-  // SendHistoryScreen,
 } from "../screens"
 
 
