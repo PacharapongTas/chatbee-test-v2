@@ -11,7 +11,7 @@ import { NotificationBar } from "../../components/notification-bar"
 
 const FULL: ViewStyle = {
   flex: 1,
-  backgroundColor: color.palette.cloudBurst,
+  backgroundColor: color.palette.surface_main,
 }
 
 const TABBAR_INDICATOR: ViewStyle = {

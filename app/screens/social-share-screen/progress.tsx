@@ -31,7 +31,7 @@ const UNIT_TEXT: TextStyle = {
 const PROGRESS_BAR: ViewStyle = {
   height: 10,
   width: "100%",
-  backgroundColor: color.palette.cloudBurst,
+  backgroundColor: color.palette.surface_main,
   borderRadius: 8,
   marginVertical: spacing.smaller,
 }

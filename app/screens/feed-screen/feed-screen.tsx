@@ -137,7 +137,7 @@ export const FeedScreen = ({ navigation }) => {
 
       <StatusBar backgroundColor="transparent" translucent />
       <Header headerText="ข่าวสาร" />
-      <Screen backgroundColor={color.palette.cloudBurst} loading={state.loading}>
+      <Screen backgroundColor={color.palette.surface_main} loading={state.loading}>
         <FlatList
           data={state.feeds}
           renderItem={({ item, index }) => (

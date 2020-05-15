@@ -218,7 +218,7 @@ export const PaymentScreen: React.FunctionComponent<IProps> = ({ navigation }) =
       <Screen
         style={SCREEN}
         preset="scroll"
-        backgroundColor={color.palette.cloudBurst}
+        backgroundColor={color.palette.surface_main}
         loading={state.loading}
       >
         {state.challenge && state.map ? (

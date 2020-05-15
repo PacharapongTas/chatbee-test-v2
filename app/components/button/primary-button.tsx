@@ -34,7 +34,7 @@ export const PrimaryButton = ({
         colors={
           rest.disabled
             ? [color.disabled, color.disabled]
-            : [color.palette.purple, color.palette.lipstick]
+            : [color.palette.primary_light, color.palette.primary_dark]
         }
         style={{ ...BASE_VIEW, ...style }}
         start={{ x: 0, y: 0 }}

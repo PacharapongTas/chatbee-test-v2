@@ -13,7 +13,7 @@ const notJoinChallengeImage = require("../../assets/images/not-join-challenge.pn
 
 const FULL: ViewStyle = {
   flex: 1,
-  backgroundColor: color.palette.cloudBurst,
+  backgroundColor: color.palette.surface_main,
 }
 
 const HEADER: ViewStyle = {

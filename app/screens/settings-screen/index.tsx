@@ -7,7 +7,7 @@ import { Screen, Header, Icon, Text } from "../../components"
 import { spacing, color } from "../../theme"
 import { logout } from "../../services/api"
 
-const FULL: ViewStyle = { flex: 1, backgroundColor: color.palette.cloudBurst }
+const FULL: ViewStyle = { flex: 1, backgroundColor: color.palette.surface_main }
 
 const CONTAINER: ViewStyle = {
   paddingHorizontal: spacing.medium,

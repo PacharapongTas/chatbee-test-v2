@@ -19,7 +19,7 @@ import { IMapProps } from "../../components/map/map.props"
 import { Payment } from "../../utils/payment"
 import { useNotificationBarContext } from "../../GlobalContext"
 
-const CONTAINER: ViewStyle = { flex: 1, backgroundColor: color.palette.cloudBurst }
+const CONTAINER: ViewStyle = { flex: 1, backgroundColor: color.palette.surface_main }
 
 const MAP_CONTAINER: ViewStyle = { backgroundColor: color.palette.mirrage }
 

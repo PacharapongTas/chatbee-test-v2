@@ -157,7 +157,7 @@ export class SocialShareScreen extends Component {
         <Header headerText="Sharing" leftIcon="back" onLeftPress={() => navigation.goBack()} />
         <Screen
           preset="scroll"
-          backgroundColor={color.palette.cloudBurst}
+          backgroundColor={color.palette.surface_main}
           style={CONTENT}
           loading={isLoading}
         >

@@ -50,7 +50,7 @@ const Visa = require("../../assets/images/visa.png")
 const Mastercard = require("../../assets/images/master-card.png")
 const AmericanExpress = require("../../assets/images/american-express.png")
 
-const CONTAINER: ViewStyle = { flex: 1, backgroundColor: color.palette.cloudBurst }
+const CONTAINER: ViewStyle = { flex: 1, backgroundColor: color.palette.surface_main }
 
 const BACKGROUND_CONTENT: ViewStyle = {
   backgroundColor: "#161C33",

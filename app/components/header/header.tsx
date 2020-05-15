@@ -18,7 +18,7 @@ const ROOT: ViewStyle = {
   paddingTop: spacing.huge,
   paddingBottom: spacing.normal,
   justifyContent: "flex-start",
-  backgroundColor: color.palette.mirrage,
+  backgroundColor: color.palette.surface_main,
 }
 const TITLE: TextStyle = { textAlign: "center", fontSize: 18, fontWeight: "bold" }
 const TITLE_MIDDLE: ViewStyle = { flex: 1, justifyContent: "center" }

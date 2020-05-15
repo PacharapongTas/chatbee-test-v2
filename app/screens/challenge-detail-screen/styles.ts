@@ -4,7 +4,7 @@ import { spacing, color } from "../../theme"
 
 export const FULL: ViewStyle = {
   flex: 1,
-  backgroundColor: color.palette.cloudBurst,
+  backgroundColor: color.palette.surface_main,
 }
 
 export const SCREEN: ViewStyle = {

@@ -18,17 +18,20 @@ export const INPUT_CONTAINER: ViewStyle = {
 
 export const INPUT = ({ disabled, error }): ViewStyle => ({
   marginTop: spacing.tiny,
-  borderTopLeftRadius: 10,
-  borderBottomLeftRadius: 10,
+  borderTopLeftRadius: 0,
+  borderBottomLeftRadius: 0,
   height: 45,
   backgroundColor: disabled ? color.darkBackground : color.palette.white,
   paddingLeft: spacing.normal,
   paddingRight: 0,
   paddingVertical: spacing.small,
   flex: 1,
-  borderWidth: error ? 2 : 0,
+  borderWidth: error ? 2 : 2,
   borderRightWidth: 0,
-  borderColor: color.error,
+  borderTopColor: color.palette.surface_main,
+  borderLeftColor: color.palette.surface_main,
+  borderRightColor: color.palette.surface_main,
+  borderColor: error ? color.error : color.palette.surface_dark,
 })
 
 export const INPUT_TEXT = ({ disabled }): TextStyle => ({
@@ -39,13 +42,15 @@ export const INPUT_TEXT = ({ disabled }): TextStyle => ({
 
 export const SUFFIX_CONTAINER = ({ disabled, error }): ViewStyle => ({
   marginTop: spacing.tiny,
-  borderTopRightRadius: 10,
-  borderBottomRightRadius: 10,
+  borderTopRightRadius: 0,
+  borderBottomRightRadius: 0,
   height: 45,
   backgroundColor: disabled ? color.darkBackground : color.palette.white,
   justifyContent: "center",
   paddingHorizontal: spacing.normal,
-  borderWidth: error ? 2 : 0,
+  borderWidth: error ? 2 : 2,
   borderLeftWidth: 0,
-  borderColor: color.error,
+  borderRightColor: color.palette.surface_main,
+  borderTopColor: color.palette.surface_main,
+  borderColor: error ? color.error : color.palette.surface_dark,
 })

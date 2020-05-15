@@ -30,7 +30,7 @@ const validationSchema = yup.object().shape({
   shirt_size: yup.string().required('กรุณากรอกข้อมูล'),
 })
 
-const CONTAINER: ViewStyle = { flex: 1, backgroundColor: color.palette.cloudBurst }
+const CONTAINER: ViewStyle = { flex: 1, backgroundColor: color.palette.surface_main }
 
 const CONTENT: ViewStyle = {
   paddingHorizontal: spacing.medium,

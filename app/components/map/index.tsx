@@ -172,7 +172,7 @@ export class Map extends React.Component<IProps & IMapProps> {
           height="100%"
           viewBox="0 0 640 360"
           preserveAspectRatio="xMidYMid meet"
-          fill={color.palette.cloudBurst}
+          fill={color.palette.surface_main}
           stroke={color.palette.electricViolet}
           color="green"
           x="0px"
