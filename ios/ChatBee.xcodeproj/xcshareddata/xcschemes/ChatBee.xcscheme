@@ -52,8 +52,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "WirtualTests.xctest"
-               BlueprintName = "WirtualTests"
+               BuildableName = "ChatBeeTests.xctest"
+               BlueprintName = "ChatBeeTests"
                ReferencedContainer = "container:ChatBee.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -79,8 +79,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "WirtualTests.xctest"
-               BlueprintName = "WirtualTests"
+               BuildableName = "ChatBeeTests.xctest"
+               BlueprintName = "ChatBeeTests"
                ReferencedContainer = "container:ChatBee.xcodeproj">
             </BuildableReference>
          </TestableReference>

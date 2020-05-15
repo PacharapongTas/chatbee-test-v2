@@ -37,7 +37,7 @@ target 'ChatBee' do
   pod 'GoogleTagManager', '7.1.2'
 
 
-  target 'WirtualTests' do
+  target 'ChatBeeTests' do
     inherit! :search_paths
     # Pods for testing
   end

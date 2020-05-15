@@ -8,6 +8,6 @@
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Wirtual.xcodeproj">
+      location = "group:ChatBee.xcodeproj">
    </FileRef>
 </Workspace>
