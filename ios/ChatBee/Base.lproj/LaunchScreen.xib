@@ -13,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="mHW-Q5-onH">
+                <!-- <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="mHW-Q5-onH">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-splashschreen" translatesAutoresizingMaskIntoConstraints="NO" id="RYv-G4-Ro8">
@@ -25,7 +25,7 @@
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask-splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="wR5-es-k4t">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                </imageView>
+                </imageView> -->
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -46,8 +46,8 @@
         </view>
     </objects>
     <resources>
-        <image name="bg-splashscreen" width="376" height="812"/>
+        <!-- <image name="bg-splashscreen" width="376" height="812"/>
         <image name="logo-splashschreen" width="202.5" height="170"/>
-        <image name="mask-splashscreen" width="376" height="812"/>
+        <image name="mask-splashscreen" width="376" height="812"/> -->
     </resources>
 </document>
