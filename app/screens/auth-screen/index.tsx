@@ -31,59 +31,65 @@ export const AuthScreen = ({ navigation }) => {
 
   const loginWithFacebook = async () => {
     // Send and event name with no properties
-    Mixpanel.track("Login with Facebook");
-    try {
-      await setState({ ...state, spinner: true })
-      const data = await authWithFacebook()
+    // Mixpanel.track("Login with Facebook");
+    // try {
+    //   await setState({ ...state, spinner: true })
+    //   const data = await authWithFacebook()
       
-      Mixpanel.identify(data.user.username)
-      navigation.replace("App")
-      await setState({ ...state, spinner: false })
-    } catch (e) {
-      setNotificationBar(e.detail, 'warning', true)
-    } finally {
-      await setState({ ...state, spinner: false })
-    }
+    //   Mixpanel.identify(data.user.username)
+    //   navigation.replace("App")
+    //   await setState({ ...state, spinner: false })
+    // } catch (e) {
+    //   setNotificationBar(e.detail, 'warning', true)
+    // } finally {
+    //   await setState({ ...state, spinner: false })
+    // }
+
+    navigation.replace("App")
+
   }
 
   async function onAppleButtonPress() {
 
     // TODO: if facebook_id exist, go to app
 
-    Mixpanel.track("Login with Apple");
-    try {
-      const appleAuthRequestResponse = await appleAuth.performRequest({
-        requestedOperation: AppleAuthRequestOperation.LOGIN,
-        requestedScopes: [AppleAuthRequestScope.EMAIL, AppleAuthRequestScope.FULL_NAME],
-      });
+    // Mixpanel.track("Login with Apple");
+    // try {
+    //   const appleAuthRequestResponse = await appleAuth.performRequest({
+    //     requestedOperation: AppleAuthRequestOperation.LOGIN,
+    //     requestedScopes: [AppleAuthRequestScope.EMAIL, AppleAuthRequestScope.FULL_NAME],
+    //   });
 
-      const {
-        authorizationCode,
-        fullName
-      } = appleAuthRequestResponse;
+    //   const {
+    //     authorizationCode,
+    //     fullName
+    //   } = appleAuthRequestResponse;
 
-        try {
-          await setState({ ...state, spinner: true })
-          const data = await authWithApple(authorizationCode, fullName.givenName, fullName.familyName)
-          Mixpanel.identify(data.user.username)
+    //     try {
+    //       await setState({ ...state, spinner: true })
+    //       const data = await authWithApple(authorizationCode, fullName.givenName, fullName.familyName)
+    //       Mixpanel.identify(data.user.username)
 
-          if (!data.user.user_profile.facebook_id) {
-    navigation.replace("LinkFacebook")
-          } else {
-            navigation.replace("App")
-          }
-        } catch (e) {
-          setNotificationBar(e.detail, 'warning', true)
-        } finally {
-          await setState({ ...state, spinner: false })
-        }
-    } catch (error) {
-      if (error.code === AppleAuthError.CANCELED) {
-        console.warn('User canceled Apple Sign in.');
-      } else {
-        console.error(error);
-      }
-    }
+    //       if (!data.user.user_profile.facebook_id) {
+    //         navigation.replace("LinkFacebook")
+    //       } else {
+    //         navigation.replace("App")
+    //       }
+    //     } catch (e) {
+    //       setNotificationBar(e.detail, 'warning', true)
+    //     } finally {
+    //       await setState({ ...state, spinner: false })
+    //     }
+    // } catch (error) {
+    //   if (error.code === AppleAuthError.CANCELED) {
+    //     console.warn('User canceled Apple Sign in.');
+    //   } else {
+    //     console.error(error);
+    //   }
+    // }
+
+    navigation.replace("App")
+
   }
 
   return (

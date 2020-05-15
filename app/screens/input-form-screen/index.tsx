@@ -5,7 +5,7 @@ import { withNextInputAutoFocusForm, handleTextInput } from "react-native-formik
 import * as yup from "yup"
 import { Formik } from "formik"
 
-import { Screen, Header, SizeChartModal, Text, ErrorText } from "../../components"
+import { Screen, Header, Text, ErrorText } from "../../components"
 import { PrimaryButton } from "../../components/button/primary-button"
 import { spacing, color } from "../../theme"
 import { Picker, TextInput } from "../../components"
@@ -231,10 +231,6 @@ export const InputFormScreen: React.FunctionComponent<IProps> = ({ navigation })
           )}
         </Formik>
       </Screen>
-      <SizeChartModal
-        visible={state.showModal}
-        onClose={() => setState({ ...state, showModal: false })}
-      />
     </View>
   )
 }

@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react"
 import { Dimensions, FlatList, StatusBar, View, ViewStyle, Platform } from "react-native"
 import { Header, Screen } from "../../components"
 import { FeedCard } from "../../components/feed-card"
-import { OnboardingPopup } from "../../components/onboarding-popup"
 import { PermissionNotificationPopup } from "../../components/permission-notification-popup"
 import { fetchFeeds, sendFcmToken } from "../../services/api"
 import { color, spacing } from "../../theme"
@@ -128,11 +127,6 @@ export const FeedScreen = ({ navigation }) => {
         visible={welcomePopupStep === WelcomePopupStep.REQUEST_PUSH_PERMISSION}
         onSubmit={onClickRequestPermissions}
         onCancel={async () => showOnboardingElseClose()}
-      />
-      <OnboardingPopup
-        visible={welcomePopupStep === WelcomePopupStep.ONBOARDING}
-        onCancel={() => setWelcomePopupStep(0)}
-        onSubmit={onClickJoinChallenge}
       />
 
       <StatusBar backgroundColor="transparent" translucent />
