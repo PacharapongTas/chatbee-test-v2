@@ -3,7 +3,7 @@ import { View } from "react-native"
 import { createBottomTabNavigator } from "react-navigation-tabs"
 
 import { Icon } from "../components"
-import { EventNavigator } from "./event-navigator"
+import { MainNavigator } from "./main-navigator"
 import { FeedNavigator } from "./feed-navigator"
 import { SendNavigator } from "./send-navigator"
 import { AccountNavigator } from "./account-navigator"
@@ -21,7 +21,7 @@ export const HomeNavigator = createBottomTabNavigator(
       },
     },
     challenges: {
-      screen: EventNavigator,
+      screen: MainNavigator,
       navigationOptions: {
         tabBarLabel: <TabBarLabel title="ชาเลนจ์" />,
         tabBarIcon: <Icon icon="challenge" />,

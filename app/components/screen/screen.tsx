@@ -18,7 +18,7 @@ const isIos = Platform.OS === "ios"
 
 const renderActivityIndicator = () => (
   <View style={{ height: "100%", justifyContent: "center", alignItems: "center" }}>
-    <ActivityIndicator size="large" color={color.palette.white} />
+    <ActivityIndicator size="large" color={color.palette.icon_black_active} />
   </View>
 )
 

@@ -33,38 +33,38 @@ export const DIVIDER: ViewStyle = {
   opacity: 0.2,
 }
 
-export const CHALLENGE_CONTAINER: ViewStyle = {
+export const SECOND_CONTAINER: ViewStyle = {
   display: "flex",
   flexDirection: "row",
   paddingVertical: spacing.normal,
   paddingHorizontal: spacing.medium,
 }
 
-export const CHALLENGE_IMAGE: ImageStyle = {
+export const SECOND_IMAGE: ImageStyle = {
   width: 100,
   height: 80,
   borderRadius: spacing.tiny,
   resizeMode: "contain",
 }
 
-export const CHALLENGE_CONTENT: ViewStyle = {
+export const SECOND_CONTENT: ViewStyle = {
   marginLeft: spacing.medium,
 }
 
-export const CHALLENGE_TITLE: TextStyle = {
+export const SECOND_TITLE: TextStyle = {
   fontWeight: "700",
   fontSize: 16,
   lineHeight: 26,
 }
 
-export const CHALLENGE_DISTANCE: TextStyle = {
+export const SECOND_DISTANCE: TextStyle = {
   fontWeight: "500",
   fontSize: 13,
   lineHeight: 20,
   opacity: 0.75,
 }
 
-export const CHALLENGE_PRICE: TextStyle = {
+export const SECOND_PRICE: TextStyle = {
   marginTop: spacing.tiny,
   fontWeight: "700",
   fontSize: 14,

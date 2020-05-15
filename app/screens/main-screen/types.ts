@@ -1,9 +1,9 @@
 import { ImageSourcePropType } from "react-native"
 import { NavigationInjectedProps } from "react-navigation"
 
-export interface EventsScreenProps extends NavigationInjectedProps<{}> {}
+export interface MainScreenProps extends NavigationInjectedProps<{}> {}
 
-export interface EventCardProps {
+export interface MainCardProps {
   imageSrc?: ImageSourcePropType
   title: string
   subtitle: string

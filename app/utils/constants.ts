@@ -1,4 +1,4 @@
-export const CHALLENGE_TYPES = {
+export const SECOND_TYPES = {
   "1": "Mini Marathon",
   "4": "Half Marathon",
   "2": "Full Marathon",

@@ -11,23 +11,23 @@ import { spacing, color } from "../../theme"
 import { Picker, TextInput } from "../../components"
 import { CONFIRM_BUTTON } from "../send-data-screen/styles"
 import { SIZE } from "../../utils/constants"
-import { getCities, getDistricts, getSubDistricts, getMe } from "../../services/api"
+// import { getCities, getDistricts, getSubDistricts, getMe } from "../../services/api"
 
 const Form = withNextInputAutoFocusForm(View)
 
 const TextInputFormik: any = handleTextInput(TextInput)
 
 const validationSchema = yup.object().shape({
-  first_name: yup.string().required('กรุณากรอกข้อมูล'),
-  last_name: yup.string().required('กรุณากรอกข้อมูล'),
-  address: yup.string().required('กรุณากรอกข้อมูล'),
-  city: yup.string().required('กรุณากรอกข้อมูล'),
-  district: yup.string().required('กรุณากรอกข้อมูล'),
-  sub_district: yup.string().required('กรุณากรอกข้อมูล'),
-  postal_code: yup.string().required('กรุณากรอกข้อมูล'),
-  email: yup.string().required('กรุณากรอกข้อมูล'),
-  phone_number: yup.string().required('กรุณากรอกข้อมูล'),
-  shirt_size: yup.string().required('กรุณากรอกข้อมูล'),
+  first_name: yup.string().required("กรุณากรอกข้อมูล"),
+  last_name: yup.string().required("กรุณากรอกข้อมูล"),
+  address: yup.string().required("กรุณากรอกข้อมูล"),
+  city: yup.string().required("กรุณากรอกข้อมูล"),
+  district: yup.string().required("กรุณากรอกข้อมูล"),
+  sub_district: yup.string().required("กรุณากรอกข้อมูล"),
+  postal_code: yup.string().required("กรุณากรอกข้อมูล"),
+  email: yup.string().required("กรุณากรอกข้อมูล"),
+  phone_number: yup.string().required("กรุณากรอกข้อมูล"),
+  shirt_size: yup.string().required("กรุณากรอกข้อมูล"),
 })
 
 const CONTAINER: ViewStyle = { flex: 1, backgroundColor: color.palette.surface_main }
@@ -50,7 +50,7 @@ const SIZE_CONTAINER: TextStyle = {
 
 export interface IProps extends NavigationInjectedProps<{}> {}
 
-export const PaymentFormScreen: React.FunctionComponent<IProps> = ({ navigation }) => {
+export const InputFormScreen: React.FunctionComponent<IProps> = ({ navigation }) => {
   const [state, setState] = useState({
     loading: true,
     showModal: false,
@@ -79,9 +79,6 @@ export const PaymentFormScreen: React.FunctionComponent<IProps> = ({ navigation 
     fetchData()
   }, [])
 
-  const toPickerItems = dataList =>
-    dataList.map(data => ({ label: data.name, value: data.code.toString() }))
-
   const getItem = (items, searchKey, searchValue, returnKey) => {
     const result = items.find(item => item[searchKey] === searchValue)
     if (result) {
@@ -91,59 +88,7 @@ export const PaymentFormScreen: React.FunctionComponent<IProps> = ({ navigation 
   }
 
   const fetchData = async () => {
-    const userData = await getMe()
-    setUserData({
-      first_name: userData.first_name,
-      last_name: userData.last_name,
-      address: userData.user_profile.address,
-      city: userData.user_profile.city,
-      district: userData.user_profile.district,
-      sub_district: userData.user_profile.sub_district,
-      postal_code: userData.user_profile.postal_code,
-      email: userData.email,
-      phone_number: userData.user_profile.phone_number,
-      shirt_size: userData.user_profile.shirt_size,
-    })
-    const cities = await getCities()
-    let districts = []
-    try {
-      districts = userData.user_profile.city
-        ? await getDistricts(getItem(cities, "name", userData.user_profile.city, "code"))
-        : []
-    } catch {}
-    let subDistricts = []
-    try {
-      subDistricts = userData.user_profile.district
-        ? await getSubDistricts(getItem(districts, "name", userData.user_profile.district, "code"))
-        : []
-    } catch {}
-    setPickerItems({
-      ...pickerItems,
-      cities: toPickerItems(cities),
-      districts: toPickerItems(districts),
-      subDistricts: toPickerItems(subDistricts),
-    })
     setState({ ...state, loading: false })
-  }
-
-  const onSelectCity = async cityId => {
-    if (cityId) {
-      const districts = await getDistricts(cityId)
-      setPickerItems({
-        ...pickerItems,
-        districts: toPickerItems(districts),
-      })
-    }
-  }
-
-  const onSelectDistrict = async districtId => {
-    if (districtId) {
-      const subDistricts = await getSubDistricts(districtId)
-      setPickerItems({
-        ...pickerItems,
-        subDistricts: toPickerItems(subDistricts),
-      })
-    }
   }
 
   const goToPreviousScreen = () => navigation.goBack()
@@ -167,9 +112,9 @@ export const PaymentFormScreen: React.FunctionComponent<IProps> = ({ navigation 
   }
 
   return (
-    <View testID="PaymentFormScreen" style={CONTAINER}>
+    <View testID="InputFormScreen" style={CONTAINER}>
       <StatusBar backgroundColor="transparent" translucent />
-      <Header headerText="ที่อยู่จัดส่ง" leftIcon="back" onLeftPress={goToPreviousScreen} />
+      <Header headerText="Demo_Form" leftIcon="back" onLeftPress={goToPreviousScreen} />
       <Screen style={CONTENT} preset="scroll" loading={state.loading}>
         <Formik
           validationSchema={validationSchema}
@@ -198,7 +143,6 @@ export const PaymentFormScreen: React.FunctionComponent<IProps> = ({ navigation 
                 value={getItem(pickerItems.cities, "label", userData.city, "value")}
                 onValueChange={cityId => {
                   const cityLabel = getItem(pickerItems.cities, "value", cityId, "label")
-                  onSelectCity(cityId)
                   setUserData({ ...userData, city: cityLabel, district: "", sub_district: "" })
                   setFieldValue("city", cityLabel)
                 }}
@@ -213,7 +157,6 @@ export const PaymentFormScreen: React.FunctionComponent<IProps> = ({ navigation 
                 value={getItem(pickerItems.districts, "label", userData.district, "value")}
                 onValueChange={districtId => {
                   const districtLabel = getItem(pickerItems.districts, "value", districtId, "label")
-                  onSelectDistrict(districtId)
                   setUserData({ ...userData, district: districtLabel, sub_district: "" })
                   setFieldValue("district", districtLabel)
                 }}

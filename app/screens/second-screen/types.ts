@@ -1,12 +1,11 @@
 import { NavigationInjectedProps } from "react-navigation"
 import { ImageSourcePropType } from "react-native"
 
-export interface ChallengesScreenProps extends NavigationInjectedProps<{}> {}
+export interface SecondScreenProps extends NavigationInjectedProps<{}> {}
 
-export interface ChallengeCardProps {
+export interface SecondCardProps {
   imageSrc?: ImageSourcePropType
   title: string
   distance: number
   price: number
-  challengeId: string
 }
