@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1043943637714-5u94a2d1h79ebn8irt43v08nl1p206ul.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1043943637714-5u94a2d1h79ebn8irt43v08nl1p206ul</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1043943637714-v2b1g19nj81h2o9si0l2uov9jv9ga6hb.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBVnqssuMUDrBKpdtQkFrZuYKCqeaERB4I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1043943637714</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.wjames.dev-wirtual</string>
+	<key>PROJECT_ID</key>
+	<string>wirtual-271107</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wirtual-271107.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1043943637714:ios:f695eb57fa6906eab7e30b</string>
+	<key>DATABASE_URL</key>
+	<string>https://wirtual-271107.firebaseio.com</string>
+</dict>
+</plist>

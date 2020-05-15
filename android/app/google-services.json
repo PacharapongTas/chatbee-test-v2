@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1043943637714",
+    "firebase_url": "https://wirtual-271107.firebaseio.com",
+    "project_id": "wirtual-271107",
+    "storage_bucket": "wirtual-271107.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043943637714:android:20f0cb0867f56736b7e30b",
+        "android_client_info": {
+          "package_name": "com.wjames.wirtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043943637714-hrv2jdqkmksrcov4h83sf88u6f70pknk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3x8m-yxocn4ziQRTQe67EynmN9EAbuJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043943637714-hrv2jdqkmksrcov4h83sf88u6f70pknk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1043943637714-7i7vid1cqoquat332np7ie6scqgbo37s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wjames.wirtual",
+                "app_store_id": "1502074660"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
