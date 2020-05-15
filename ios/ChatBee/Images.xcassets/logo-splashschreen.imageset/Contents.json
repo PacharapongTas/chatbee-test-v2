@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "logo-splashschreen.png",
+      "filename" : "logo-splashschreen-wait-icon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "logo-splashschreen@2x.png",
+      "filename" : "logo-splashschreen@2x-wait-icon.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "logo-splashschreen@3x.png",
+      "filename" : "logo-splashschreen@3x-wait-icon.png",
       "scale" : "3x"
     }
   ],
