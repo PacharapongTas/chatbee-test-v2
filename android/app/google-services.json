@@ -1,16 +1,16 @@
 {
   "project_info": {
     "project_number": "1043943637714",
-    "firebase_url": "https://wirtual-271107.firebaseio.com",
-    "project_id": "wirtual-271107",
-    "storage_bucket": "wirtual-271107.appspot.com"
+    "firebase_url": "https://chatbee-271107.firebaseio.com",
+    "project_id": "chatbee-271107",
+    "storage_bucket": "chatbee-271107.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:1043943637714:android:20f0cb0867f56736b7e30b",
         "android_client_info": {
-          "package_name": "com.wjames.wirtual"
+          "package_name": "com.wjames.chatbee"
         }
       },
       "oauth_client": [
@@ -35,7 +35,7 @@
               "client_id": "1043943637714-7i7vid1cqoquat332np7ie6scqgbo37s.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.wjames.wirtual",
+                "bundle_id": "com.wjames.chatbee",
                 "app_store_id": "1502074660"
               }
             }
